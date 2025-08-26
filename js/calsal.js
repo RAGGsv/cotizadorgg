@@ -51,9 +51,9 @@ function calsalcont() {
         //document.querySelector('.input-grupo0').style.display = 'block';
 
         let salini = (num1 - num2).toFixed(2);
-        let docem = (((((salini * 0.04) * num4) + 65) * 1.13 + parseFloat(salini)) / num4).toFixed(2);
+        let docem = (((((salini * 0.03) * num4) + 65) * 1.13 + parseFloat(salini)) / num4).toFixed(2);
         let montopag = (docem * num3).toFixed(2);
-        let salrestante = (((((salini * 0.04) * num4) + 65) * 1.13 + parseFloat(salini)) - montopag).toFixed(2);
+        let salrestante = (((((salini * 0.03) * num4) + 65) * 1.13 + parseFloat(salini)) - montopag).toFixed(2);
 
         let saldodividido = (salini / num4).toFixed(2);
         let mesesrestantes = (num4 - num3);
@@ -69,4 +69,5 @@ function calsalcont() {
         document.getElementById("lblsalpag").innerHTML = "- Saldo a pagar de contado $" + salapagar;
         document.getElementById("lbldesapli").innerHTML = "- Descuento a aplicar (%): " + descuento + "%";
     }
+
 }
