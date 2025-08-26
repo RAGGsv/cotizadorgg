@@ -47,7 +47,7 @@ function calprimin(){
         //gasadm = parseFloat(250).toFixed(2);
         tralegal = parseFloat(65).toFixed(2);
         gasadm = parseFloat(250).toFixed(2) - parseFloat(tralegal).toFixed(2);
-        prima = (parseFloat(num1) * 0.35).toFixed(2);
+        prima = (parseFloat(num1) * 0.30).toFixed(2);
         primin = parseFloat(num2).toFixed(2);
         saldo = (parseFloat(num1) - parseFloat(num2)).toFixed(2);
         pagini = parseFloat(num2) - parseFloat(250).toFixed(2);
@@ -61,11 +61,11 @@ function calprimin(){
         document.getElementById("lblsaldo").innerHTML= "Saldo $" + saldo;
         document.getElementById("lblpreciom").innerHTML= "Precio de la motocicleta $" + precio;
 
-        rescseis = ((((((saldo * 0.04) * 6) + 65) * 1.13) + saldo1)/6).toFixed(2)
-        rescdoce = ((((((saldo * 0.04) * 12) + 65) * 1.13) + saldo1)/12).toFixed(2)
-        rescdocho = ((((((saldo * 0.04) * 18) + 65) * 1.13) + saldo1)/18).toFixed(2)
-        rescvcuatro = ((((((saldo * 0.04) * 24) + 65) * 1.13) + saldo1)/24).toFixed(2)
-        restreinta = ((((((saldo * 0.04) * 30) + 65) * 1.13) + saldo1)/30).toFixed(2)
+        rescseis = ((((((saldo * 0.03) * 6) + 65) * 1.13) + saldo1)/6).toFixed(2)
+        rescdoce = ((((((saldo * 0.03) * 12) + 65) * 1.13) + saldo1)/12).toFixed(2)
+        rescdocho = ((((((saldo * 0.03) * 18) + 65) * 1.13) + saldo1)/18).toFixed(2)
+        rescvcuatro = ((((((saldo * 0.03) * 24) + 65) * 1.13) + saldo1)/24).toFixed(2)
+        restreinta = ((((((saldo * 0.03) * 30) + 65) * 1.13) + saldo1)/30).toFixed(2)
 
         document.getElementById("lbl06_06").innerHTML= "$" + rescseis;
         document.getElementById("lbl12_12").innerHTML= "$" + rescdoce;
@@ -74,3 +74,4 @@ function calprimin(){
         document.getElementById("lbl30_30").innerHTML= "$" + restreinta;
     }         
 }
+
