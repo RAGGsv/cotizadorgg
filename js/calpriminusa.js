@@ -50,10 +50,10 @@ function calprimin(){
 
         resctres = (saldo1 / 3).toFixed(2)
         //resctrest = ((saldo1 + 65) / 3).toFixed(2)
-        rescseis = (((saldo1 * 0.04) * 6 + saldo1) / 6).toFixed(2)
-        rescdoce = (((saldo1 * 0.04) * 12 + saldo1) / 12).toFixed(2)
-        rescdocho = (((saldo1 * 0.04) * 18 + saldo1) / 18).toFixed(2)
-        rescvcuatro = (((saldo1 * 0.04) * 24 + saldo1) / 24).toFixed(2)
+        rescseis = (((saldo1 * 0.03) * 6 + saldo1) / 6).toFixed(2)
+        rescdoce = (((saldo1 * 0.03) * 12 + saldo1) / 12).toFixed(2)
+        rescdocho = (((saldo1 * 0.03) * 18 + saldo1) / 18).toFixed(2)
+        rescvcuatro = (((saldo1 * 0.03) * 24 + saldo1) / 24).toFixed(2)
 
         document.getElementById("lbl03_03").innerHTML= "$"  + resctres;
         //document.getElementById("lbl03t_03t").innerHTML= "03 cuotas s/i + traspaso de $" + resctrest;
@@ -66,3 +66,4 @@ function calprimin(){
         //document.querySelector(".btnnvacot").click();
     }         
 }
+
