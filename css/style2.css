@@ -1,0 +1,211 @@
+:root {
+    --primary-color: #1e88e5;
+    --accent-color: #43a047;
+    --danger-color: #e53935;
+    --background: #f5f7fa;
+    --foreground: #ffffff;
+    --text-color: #333;
+    --font: 'Segoe UI', 'Roboto', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+  }
+  
+  body {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  form#formulario {
+    background-color: var(--foreground);
+    padding: 1.2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  h3 {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-top: -15px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sección de resultados */
+
+ .detcalc {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+ .input-grupo0 {
+  background-color: #f0f4f8;
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /*display: none;*/
+}
+
+.input-grupo0 label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+  .input-grupo1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .input-grupo2 {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+  }
+  
+  .input-grupo2 button {
+    flex: 1;
+  }
+
+  /* Inputs */
+
+  input[type="number"] {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s, box-shadow 0.3s;
+  }
+  
+  input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.3);
+    outline: none;
+  }
+
+  .style-select {  
+    border-radius: 8px;
+    padding: 0.3rem;
+    font-size: 1rem;
+    transition: border 0.2s;
+    border-color: #ccc;
+    outline: none;
+    color: #757575;
+    background-color: white;
+   }
+
+    select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+
+  button {
+    padding: 0.4rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+  }
+
+  /* Botones especiales */
+  
+  .btnnvocalc {
+    background-color: var(--accent-color);
+    padding: 20px;
+  }
+  
+  .btnregresar2 {
+    background-color: var(--danger-color);
+    padding: 20px;
+  }
+  
+  /* Responsive para celular */
+
+  @media (max-width: 480px) {
+    form#formulario {
+      padding: 0.1rem;
+      background-color: white;
+    }
+  
+    body {
+      background-color: white;
+    }
+
+    h3 {
+      display: block;
+      text-align: center;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-top: -10px;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      margin-top: 0px;
+    }
+  
+    button {
+      font-size: 1.1rem;
+      padding: 0.8rem;
+    }
+
+    input[type="number"] {
+      padding: 0.7rem;
+      font-size: 1.1rem;
+    }
+
+    .style-select {
+      font-size: 1.1rem;
+      padding: 0.7rem;
+      background-color: white;
+    }
+
+    .detcalc {
+      font-size: 1.3rem;
+    }
+
+    .Salini {
+      font-size: 1.1rem;
+    }
+
+    .Monmen {
+      font-size: 1.1rem;
+    }
+
+    .Monpag {
+      font-size: 1.1rem;
+    }
+
+    .Salres {
+      font-size: 1.1rem;
+    }
+
+    .Salpag {
+      font-size: 1.1rem;
+    }
+
+    .Desapli {
+      font-size: 1.1rem;
+    }
+  }

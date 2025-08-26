@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cotizador Grupo Guevara</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.ico">
+</head>
+
+<body>
+  <form id="formulario">
+    <h3>Grupo Guevara S.A. De C.V.</h3>
+    <h1>COTIZADOR MOTOCICLETAS LEASING</h1>
+
+    <!-- Grupo de inputs para precio y prima mínima -->
+    <div class="input-grupo1">
+      <input type="number" id="numero1" placeholder="Ingrese precio de la motocicleta" />
+      <input type="number" id="numero2" placeholder="Ingrese prima mínima" />
+
+      <!-- Botones alineados horizontalmente -->
+      <div class="botones-prima">
+        <button type="button" class="Btncalp" id="myBtnPrima">Calcular Prima</button>
+        <button type="button" class="Btncalpm" id="myBtnPrimin">Cal Prima Min</button>
+      </div>
+    </div>
+
+    <!-- Sección de resultados -->
+    <div class="input-grupo0">
+      <label class="detcalc"><strong>DETALLES DEL CALCULO</strong></label>
+      <label class="pcal" id="lbltoprimacal">- Prima Calculada (35%) $0.00</label>
+      <label class="pini" id="lblpagini">- Pago Inicial (A Facturar) $0.00</label>
+      <label class="gadm" id="lblgasadm">- Gastos Admin (En Recibo) $0.00</label>
+      <label class="tralegal" id="lbltralegal">- Trámite Legal (En Recibo) $0.00</label>
+    </div>
+
+    <!-- Sección de prima y saldo -->
+    <div class="lblcalprima1">
+      <label class="laprim1" id="lblprima">La prima es de</label>
+      <label class="lbltoprima" id="lbltoprima1">$0.00</label>
+      <label class="lblsal" id="lblsaldo">Saldo $0.00</label>
+      <label class="lblpreciomo" id="lblpreciom">Precio de la motocicleta $0.00</label>
+    </div>
+
+    <!-- Título de tabla -->
+    <div class="titulo-pago">
+      <span>Planes De Pago Mensual</span>
+    </div>
+
+    <!-- Tabla de cuotas -->
+    <div class="tabla-container1">
+      <table>
+        <tbody>
+          <tr>
+            <td>06 Cuotas de</td>
+            <td class="lbl06_06_06" id="lbl06_06">$0.00</td>
+          </tr>
+          <tr>
+            <td>12 Cuotas de</td>
+            <td class="lbl12_12_12" id="lbl12_12">$0.00</td>
+          </tr>
+          <tr>
+            <td>18 Cuotas de</td>
+            <td class="lbl18_18_18" id="lbl18_18">$0.00</td>
+          </tr>
+          <tr>
+            <td>24 Cuotas de</td>
+            <td class="lbl24_24_24" id="lbl24_24">$0.00</td>
+          </tr>
+          <tr>
+            <td>30 Cuotas de</td>
+            <td class="lbl30_30_30" id="lbl30_30">$0.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Botones finales -->
+    <div class="input-grupo2">
+      <button id="Cmotusa" type="button" class="btncotusada">Moto Usada</button>
+      <button id="Calsalconta1" type="button" class="btncalsalconta">Saldo Contado</button>
+    </div>
+
+    <div class="input-grupo3">
+      <button id="NvaCot" type="button" class="btnnvacot">Nueva Cotizacion</button>
+    </div>
+    
+  </form>
+
+  <script src="js/ncot.js"></script>
+  <script src="js/calprima.js"></script>
+  <script src="js/calprimin.js"></script>
+  <script src="js/cmotusa.js"></script>
+  <script src="js/cotsaldoconta.js"></script>
+</body>
+</html>

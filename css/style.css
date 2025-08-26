@@ -1,0 +1,315 @@
+﻿:root {
+  --primary-color: #1e88e5;
+  --primary-gradient: linear-gradient(135deg, #1e88e5, #1565c0);
+  --accent-color: #43a047;
+  --danger-color: #e53935;
+  --background: #f5f7fa;
+  --foreground: #ffffff;
+  --text-color: #333;
+  --font: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+/* Contenedor principal */
+form#formulario {
+  background-color: var(--foreground);
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Títulos */
+h3 {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-top: -15px;
+  margin-bottom: 0.5rem;
+}
+
+/* Bloques de inputs */
+.input-grupo1, .input-grupo0, .input-grupo3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.input-grupo3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+/* Sección de resultados */
+.input-grupo0 {
+  background-color: #f0f4f8;
+  padding: 0.6rem;
+  border-radius: 10px;
+  display: none;
+}
+
+.detcalc {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* Inputs */
+input[type="number"] {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(30, 136, 229, 0.3);
+  outline: none;
+}
+
+/* Botones generales */
+button {
+  padding: 0.4rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+}
+
+/* Botones especiales*/
+.btnnvacot {
+  background-color: var(--danger-color);
+  /*padding: 12px;*/
+}
+
+.btncotusada {
+  background:#9c27b0;
+  padding: 20px;
+  /*font-size: 1rem;*/
+}
+
+.btncalsalconta {
+  background:#2e7d32;
+  padding: 20px;
+}
+
+/* Botones Calcular Prima y Calcular Prima Mínima */
+.botones-prima, .input-grupo1 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.botones-prima, .input-grupo1 button {
+  flex: 1;
+}
+
+.input-grupo2 {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.input-grupo2 button {
+  flex: 1;
+}
+
+.btnnvacot {
+  margin-bottom: -1rem;
+}
+
+/* Prima y saldo */
+.lblcalprima1 label {
+  display: block;
+}
+
+.lbltoprima {
+  font-size: 35px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Título de la tabla */
+.titulo-pago {
+  background-color: #e3f2fd;
+  padding: 0.4rem 1rem;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0.8rem 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  display: none; /* oculto al inicio */
+}
+
+/* Tabla cuotas */
+.tabla-container1 {
+  overflow-x: auto;
+  border-radius: 12px;
+  display: none; /* oculta al inicio */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.2rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.lbl06_06_06 {
+  text-align: right;
+}
+
+.lbl12_12_12 {
+  text-align: right;
+}
+
+.lbl18_18_18 {
+  text-align: right;
+}
+
+.lbl24_24_24 {
+  text-align: right;
+}
+
+.lbl30_30_30 {
+  text-align: right;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f4f8;
+}
+
+ /* Responsive para celular */
+
+ @media (max-width: 480px) {
+  form#formulario {
+    padding: 0.1rem;
+    background-color: white;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  h3 {
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: -10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-top: 0px;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  .btnnvacot {
+    padding: 0.8rem;
+  }
+
+  input[type="number"] {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+  }
+
+  /* Sección de resultados */
+.input-grupo0 {
+   display: none;
+}
+
+  .detcalc {
+    font-size: 1.3rem;
+  }
+
+  .pcal {
+    font-size: 1.1rem;
+  }
+
+  .pini {
+    font-size: 1.1rem;
+  }
+
+  .gadm {
+    font-size: 1.1rem;
+  }
+
+  .tralegal {
+    font-size: 1.1rem;
+  }
+
+  .laprim1 {
+    font-size: 1.1rem;
+    margin-top: 0px;
+  }
+
+  .lblsal {
+    font-size: 1.1rem;
+  }
+
+  .lblpreciomo {
+    font-size: 1.1rem;
+  }
+
+  .lbltoprima {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .titulo-pago {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  th, td {
+    font-size: 1.1rem;
+  }
+}

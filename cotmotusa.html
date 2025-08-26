@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotizador Grupo Guevara</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="icon" href="images/logo.ico">
+</head>
+
+<body>
+  <form id="formulario1">
+    <h3>Grupo Guevara S.A. De C.V.</h3>
+    <h1>COTIZADOR MOTOCICLETAS USADAS</h1>
+
+    <div class="input-grupo">
+      <input type="number" id="numero1" placeholder="Ingrese precio de la motocicleta">
+      <button type="button" id="myBtnPrimausa">Calcular Prima</button>
+      <input type="number" id="numero2" placeholder="Ingrese prima minima">
+      <button type="button" id="myBtnPriminusa">Calcular Prima Minima</button>
+    </div>
+
+    <div class="lblcalprima">  
+      <label class = "laprim" id="lblprima">La prima es de</label>
+      <label class="lbltoprima" id="lbltoprima1">$0.00</label>
+      <label class ="lblsal" id="lblsaldo">Saldo $0.00</label>
+      <label class = "lblpreciomo" id="lblpreciomo1">Precio de la motocicleta $0.00</label>    
+    </div>
+
+    <div class="titulo-pago">
+      <span>Planes De Pago Mensual</span>
+    </div>
+
+    <div class="tabla-container">
+      <table>
+        <tbody>
+          <tr>
+            <td id="lbl03_03_03">03 Cuotas sin intereses de</td>
+            <td class="lbl03" id="lbl03_03">$0.00</td>
+          </tr>
+          <tr>
+            <td id="lbl06_06_06">06 Cuotas de</td>
+            <td class="lbl06" id="lbl06_06">$0.00</td>
+          </tr>
+          <tr>
+            <td id="lbl12_12_12">12 Cuotas de</td>
+            <td class="lbl12" id="lbl12_12">$0.00</td>
+          </tr>
+          <tr>
+            <td id="lbl18_18_18">18 Cuotas de</td>
+            <td class="lbl18" id="lbl18_18">$0.00</td>
+          </tr>
+          <tr>
+            <td id="lbl24_24_24">24 Cuotas de</td>
+            <td class="lbl24" id="lbl24_24">$0.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="input-grupo5">
+      <button id="NvaCot" type="button" class="btnnvacotusa">Nva Cotizacion</button>
+      <button id="Reg" type="button" class="btnreg">Regresar</button>
+    </div>
+  </form>
+	      <script src="js/ncotusa.js"></script>
+        <script src="js/regresar.js"></script>
+        <script src="js/calprimausa.js"></script>
+        <script src="js/calpriminusa.js"></script>
+</body>
+</html>

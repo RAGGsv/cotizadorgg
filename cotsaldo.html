@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cotizador Grupo Guevara</title>
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="icon" href="images/logo.ico">
+</head>
+
+<body>
+  <form id="formulario">
+    <h3>Grupo Guevara S.A. De C.V.</h3>
+    <h1>CALCULAR SALDO DE CONTADO</h1>
+
+    <div class="input-grupo1">
+      <input type="number" id="numero1" placeholder="Ingrese precio de la motocicleta" />
+      <input type="number" id="numero2" placeholder="Ingrese prima (cuota inicial)" />
+      <input type="number" id="numero3" placeholder="Ingrese cantidad de cuotas pagadas" />
+    
+      <select class="style-select" id="lista">
+        <option value="" disabled selected>Seleccione plazo (meses) del credito</option>
+        <option value="6">06 Meses</option>
+        <option value="12">12 Meses</option>
+        <option value="18">18 Meses</option>
+        <option value="24">24 Meses</option>
+        <option value="30">30 Meses</option>
+      </select>
+
+      <button type="button" id="myBtncalsalconta">Calcular Saldo Contado</button>
+    </div>
+
+    <div class="input-grupo0">
+      <label class="detcalc"><strong>DETALLES DEL CALCULO</strong></label>
+      
+      <label class="Salini" id="lblsalini">- Saldo inicial $0.00</label>
+      <label class="Monmen" id="lblmonmen">- Monto mensual $0.00</label>
+      <label class="Monpag" id="lblmonpag">- Monto pagado (0 cuotas) $0.00</label>
+
+      <label class="Salres" id="lblsalres">- Saldo restante $0.00</label>
+      <label class="Salpag" id="lblsalpag">- Saldo a pagar de contado $0.00</label>
+      <label class="Desapli" id="lbldesapli">- Descuento a aplicar (%):</label>
+    </div>
+
+    <div class="input-grupo2">
+      <button id="Nvacalc" type="button" class="btnnvocalc">Nuevo Calculo</button>
+      <button id="btnregresar" type="button" class="btnregresar2">Regresar</button>
+    </div>
+  </form>
+
+  <!-- <script src="js/ncot.js"></script> -->
+  <!-- <script src="js/calprima.js"></script> -->
+  <script src="js/calsal.js"></script>
+  <script src="js/nucalc.js"></script>
+  <script src="js/regresar1.js"></script>
+</body>
+</html>
