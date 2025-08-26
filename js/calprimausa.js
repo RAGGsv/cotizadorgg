@@ -28,7 +28,7 @@ function calprima(){
 
     } else {
 
-        prima = (parseFloat(num1) * 0.35).toFixed(2);
+        prima = (parseFloat(num1) * 0.30).toFixed(2);
         saldo = (parseFloat(num1) - parseFloat(prima)).toFixed(2);
     
         document.getElementById("lblprima").innerHTML= "La prima es de";
@@ -37,4 +37,5 @@ function calprima(){
         document.getElementById("lblpreciomo1").innerHTML= "Precio de la motocicleta $" + precio;
         //document.getElementById("numero2").focus();
     }  
+
 }
