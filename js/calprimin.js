@@ -54,7 +54,7 @@ function calprimin(){
 
         document.getElementById("lblprima").innerHTML= "La prima es de";
         document.getElementById("lbltoprima1").innerHTML= "$" + primin;
-        document.getElementById("lbltoprimacal").innerHTML= "- Prima Calculada (35%) $" + prima;
+        document.getElementById("lbltoprimacal").innerHTML= "- Prima Calculada (30%) $" + prima;
         document.getElementById("lblpagini").innerHTML= "- Pago Inicial (A Facturar) $" + pagini;
         document.getElementById("lblgasadm").innerHTML= "- Gastos Admin (En Recibo) $" + gasadm;
         document.getElementById("lbltralegal").innerHTML= "- Tramite Legal (En Recibo) $" + tralegal;
@@ -74,4 +74,5 @@ function calprimin(){
         document.getElementById("lbl30_30").innerHTML= "$" + restreinta;
     }         
 }
+
 
